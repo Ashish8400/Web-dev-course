@@ -1,4 +1,27 @@
 body{
-    background-color: rgb(208, 134, 134) 
-    ma
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba( 0 0 0 )
+}
+body > .content{
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+section p img{
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+}
+section h3{
+    text-align: center;
+    margin: o auto;
+    width: 805;
+    color: #333;
 }
