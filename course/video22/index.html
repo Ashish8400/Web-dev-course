@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+        .container{
+            background-color: beige;
+            height:740px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height:330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 20px 15px burlywood; */
+            /* x-offset and y-offset and color value */
+
+            /* box-shadow: 16px 15px 10px rgb(61, 28, 152); */
+            /* x-offset y-offset and blur radius and color value */
+
+            box-shadow: 10px 10px 100px 100px rgb(150, 11, 150);
+            /* x-offset y-offset blur radius and spread radius and colur value */
+
+            
+            /* inside the shadow then we use this  */
+
+        }
+        #head1{ 
+             /* text-shadow: 2px 3px 1px white; */
+
+             /* text-shadow: yellow 3px 3px 1px ; */
+
+             text-shadow: 1px 1px 5px red, 1px 1px 10px orange, 0 0 15px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <img src="vk.jpeg" height="200px" />
+        <h2 id="head1">Welcome to Virat Kohli</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolorem numquam eaque iusto fugiat unde, illum excepturi. Ut, fugit.
+        </p>
+    </div>
+    </div>
+    </body>
+    </body>
+</body>
+</html>
