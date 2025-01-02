@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 85vw;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  /* background-color: aqua;
+ */
+}
+.header-container {
+  margin-bottom: 2.5rem;
+}
+.header-title {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.header-description {
+  max-width: 568px;
+  text-align: center;
+  color: rgb(56, 56, 56);
+  margin: 0 auto;
+}
+
+.main-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr); 
+
+}
+@media(min-width:600px) {
+    .main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+@media(min-width:900px) {
+    .main-container{
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width:1340px) {
+    .main-container{
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.card_container {
+    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(116, 113, 113);
+  border-radius: 8px;
+}
+.card_image_container{
+  position: relative;
+  overflow: hidden;
+  height: 7rem;
+}
+
+@media(min-width:768px){
+    .card_image_container{ 
+        height: 12rem;
+      }
+}
+.card_image {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.card_title_container{
+     display: flex;
+     flex-direction: column; 
+     padding: 1.5rem;
+
+}
+ .card_container:hover .card_image{
+    transform: scale(1.1  );
+    transition-duration:   200ms; ;
+ }
+ .card_title{
+    font-size: 1rem;
+    font-weight: 700; 
+    color: rgb(56, 56, 56);
+    line-height: 1rem;
+    margin-bottom: 0.3rem;
+ }
+ .card_title_anchor:hover .card_title{
+    color: rgb(97, 97, 213);
+ }
+ .card_desc{
+     color: rgb(108, 101, 101);
+     font-size: 1rem;
+ }
+ .card_footer_conainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:0 1.5rem;
+    padding-bottom: 1.5rem;
+ }
+ .auther_continer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+ }
+ .auther_avtaar_container{
+     height: 2.5rem;
+     width: 2.5rem;
+     overflow: hidden;
+     border: 1px solid rgb(151, 146, 146);
+     border-radius: 50%;
+     background-color: rgb(211, 210, 210);
+ }
+ .auther_info_container{
+    display: flex;
+    flex-direction: column;
+ }
+ .auther_name{
+    color: rgb(76, 76, 208);
+ }
+ .auther_date{
+    color: rgb(108, 101, 101); 
+ }
+ .card_tag_container{
+    font-size: 0.8rem;
+    border: 1px solid rgb(118, 115, 115);
+    border-radius:2px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: grey;
+ }
